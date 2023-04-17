@@ -1,0 +1,36 @@
+{
+  "name": "@piman51277/backprop-visualizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "build": "rm -r out && tsc"
+  },
+  "keywords": [
+    "ai",
+    "neural network",
+    "backpropagation",
+    "typescript"
+  ],
+  "author": "piman51277",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/benchmark": "^2.1.1",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "benchmark": "^2.1.4",
+    "eslint": "^8.11.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^4.6.3",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "exec": "npm run build"
+  }
+}
