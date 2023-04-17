@@ -8,13 +8,15 @@ import { updateResultsPanel } from "../util/updateResultsPanel";
 import { getNetResults } from "../net/getNetResults";
 import { trainConfig } from "../net/trainConfig";
 
+export type AutoSpeed = "1" | "10" | "max";
+
 /**
  * The simulation class is responsible for managing the state of the simulation.
  */
 export class Simulation {
   currentDisplayCase: number;
   net: Net;
-  autoSpeed: "1" | "10" | "max";
+  autoSpeed: AutoSpeed;
   autoEnabled: boolean;
   epoch: number;
   interval: NodeJS.Timer;
@@ -58,7 +60,7 @@ export class Simulation {
    * @param speed The speed to set the auto to
    * @returns void
    */
-  setAutoSpeed(speed: "1" | "10" | "max"): void {
+  setAutoSpeed(speed: AutoSpeed): void {
     this.autoSpeed = speed;
 
     //if the auto is on, replace the interval
