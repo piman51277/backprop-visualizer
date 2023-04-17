@@ -15,6 +15,8 @@ export function drawScene(
   weights: number[][],
   biases: number[][]
 ) {
+  //clear the canvas
+  ctx.clearRect(0, 0, 360, 400);
 
   //layer 0 to layer 1 weights
   drawWeight(ctx, 40, 90, 180, 40, weights[0][0]);
