@@ -33,5 +33,8 @@
     ],
     "ext": "ts",
     "exec": "npm run build"
+  },
+  "dependencies": {
+    "@piman51277/backprop": "github:piman51277/node-backprop"
   }
 }
