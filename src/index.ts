@@ -26,7 +26,7 @@ ready(() => {
   }
 
   //auto buttons
-  const autoButtonSuffixes = ["1", "10", "max"];
+  const autoButtonSuffixes = ["1x", "10x", "max"];
   const autoValues = ["1", "10", "max"];
   for (let i = 0; i < autoButtonSuffixes.length; i++) {
     const fullId = `btn-auto-${autoButtonSuffixes[i]}`;
