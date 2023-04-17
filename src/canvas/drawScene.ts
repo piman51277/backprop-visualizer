@@ -2,6 +2,13 @@ import { drawBiasNeuron } from "./drawBiasNeuron";
 import { drawNeuron } from "./drawNeuron";
 import { drawWeight } from "./drawWeight";
 
+/**
+ * Draws the neural network
+ * @param ctx Rendering context
+ * @param neurons Neural network output
+ * @param weights Weights of the neural network
+ * @param biases Biases of the neural network
+ */
 export function drawScene(
   ctx: CanvasRenderingContext2D,
   neurons: number[][],
