@@ -53,7 +53,7 @@ export function drawScene(
   drawNeuron(ctx, 180, 240, neurons[1][2]);
 
   //layer 2
-  drawNeuron(ctx, 320, 140, neurons[1][1]);
+  drawNeuron(ctx, 320, 140, neurons[2][0]);
 
   //draw the bias neurons
   drawBiasNeuron(ctx, 40, 360);
