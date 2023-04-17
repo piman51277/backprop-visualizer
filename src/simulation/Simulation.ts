@@ -110,4 +110,13 @@ export class Simulation {
     this.currentDisplayCase = (this.currentDisplayCase + 1) % xorTest.length;
     this.update();
   }
+
+  /**
+   * Resets the simulation
+   */
+  reset(): void {
+    this.net = newNet();
+    this.epoch = 0;
+    this.update();
+  }
 }
