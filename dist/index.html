@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <script src="/bundle.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="nns-frame">
+      <div id="nns-title">
+        <p>Neural Net Simulator (XOR Test)</p>
+      </div>
+      <div id="visualization-frame">
+        <canvas id="nns-canvas"></canvas>
+      </div>
+      <div id="control-frame">
+        <div id="epoch-error-display">
+          <table>
+            <thead>
+              <tr>
+                <th>Epoch</th>
+                <th>Error</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="epoch-count-number">0</td>
+                <td id="epoch-error-number">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="model-results-display">
+          <p>Model Results</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Input</th>
+                <th>Expected</th>
+                <th>Actual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1,0</td>
+                <td>1</td>
+                <td id="result-10">0</td>
+              </tr>
+              <tr>
+                <td>0,1</td>
+                <td>1</td>
+                <td id="result-01">0</td>
+              </tr>
+              <tr>
+                <td>0,0</td>
+                <td>0</td>
+                <td id="result-00">0</td>
+              </tr>
+              <tr>
+                <td>1,1</td>
+                <td>0</td>
+                <td id="result-11">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="sim-control-panel">
+          <p id="sim-control-title">Sim Control</p>
+
+          <p id="sim-control-subheading">Step</p>
+          <div class="control-group">
+            <div class="control-button" id="btn-step-plus1">
+              <p>+1</p>
+            </div>
+            <div class="control-button" id="btn-step-plus5">
+              <p>+5</p>
+            </div>
+            <div class="control-button" id="btn-step-plus10">
+              <p>+10</p>
+            </div>
+            <div class="control-button" id="btn-step-plus20">
+              <p>+20</p>
+            </div>
+          </div>
+          <p id="sim-control-subheading">Auto</p>
+          <div class="control-group">
+            <div class="control-button" id="btn-auto-1x">
+              <p>1x</p>
+            </div>
+            <div class="control-button" id="btn-auto-10x">
+              <p>10x</p>
+            </div>
+            <div class="control-button" id="btn-auto-max">
+              <p>MAX</p>
+            </div>
+            <div class="control-button red" id="btn-auto-stop">
+              <p>STOP</p>
+            </div>
+          </div>
+          <p id="sim-control-subheading">General</p>
+          <div class="control-group-duo">
+            <div class="control-button-duo" id="btn-nextcase">
+              <p>NEXT CASE</p>
+            </div>
+            <div class="control-button-duo red" id="btn-reset">
+              <p>RESET</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
