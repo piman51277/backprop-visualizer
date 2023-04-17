@@ -11,12 +11,12 @@ export function formatNum(n: number): string {
 
   //if the number is between -10 and 10
   if (n > -10 && n < 10) {
-    return n.toFixed(2);
+    return n.toFixed(3);
   }
 
   //if the number is larger than 10000, we want to use scientific notation
   if (n > 10000) {
-    return n.toExponential(2);
+    return n.toExponential(3);
   }
 
   //if not, just truncate to 6 chars

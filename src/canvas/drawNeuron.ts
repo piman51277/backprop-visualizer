@@ -34,5 +34,5 @@ export function drawNeuron(
   ctx.fillStyle = "white";
   ctx.font = "bold 24px Arial";
   ctx.textAlign = "center";
-  ctx.fillText(value.toFixed(2), x, y + 8);
+  ctx.fillText(value.toFixed(3), x, y + 8);
 }
