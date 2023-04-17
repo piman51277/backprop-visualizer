@@ -61,14 +61,13 @@ table {
   font-size: 32px;
 }
 
-#visualization-frame{
+#visualization-frame {
   width: 360px;
   height: 400px;
   position: absolute;
   top: 60px;
   left: 0px;
 }
-
 
 #nns-canvas {
   width: 360px;
@@ -179,6 +178,7 @@ table {
   height: 30px;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 
 .control-button-duo {
@@ -189,6 +189,7 @@ table {
   height: 30px;
   display: inline-block;
   border: none;
+  cursor: pointer;
 }
 
 .control-button p,
